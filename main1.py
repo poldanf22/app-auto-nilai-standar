@@ -77,5 +77,5 @@ if uploaded_file is not None:
 		ws['V{}'.format(row)]='=IF(SUM(Q{}:U{})=0,"",SUM(Q{}:U{}))'.format(row,row,row,row)
 		ws['W{}'.format(row)]='=IF(V{}="","",RANK(V{},$V$2:$V${}))'.format(row,row,q)
 
-	wb.save("nilai_std_pts_dummy.xlsx")	
+	wb.save(r"C:Desktop\nilai_std_pts_dummy.xlsx")	
 
